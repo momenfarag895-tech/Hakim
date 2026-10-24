@@ -1,0 +1,433 @@
+/* =========================
+Global Styles
+========================= */
+
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =========================
+Register Main Layout
+========================= */
+
+.register-main {
+width: 100%;
+min-height: 100vh;
+display: flex;
+justify-content: space-around;
+align-items: center;
+gap: 30px;
+padding: 35px;
+background-color: #ffffff;
+}
+
+/* =========================
+Register Image
+========================= */
+
+.register-icon {
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+min-width: 0;
+}
+
+.register-icon img {
+display: block;
+width: 100%;
+max-width: 420px;
+height: auto;
+object-fit: contain;
+}
+
+/* =========================
+Register Section
+========================= */
+
+.register-section {
+flex: 1;
+width: auto;
+min-width: 0;
+min-height: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+background-color: #ffffff;
+}
+
+/* =========================
+Register Card
+========================= */
+
+.register-card {
+width: 100%;
+max-width: 350px;
+padding: 18px 30px 20px;
+background-color: #ffffff;
+border-radius: 12px;
+box-shadow: 0 2px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+Register Heading
+========================= */
+
+.form-hid {
+text-align: center;
+margin-bottom: 18px;
+}
+
+.form-hid h1 {
+margin: 0 0 10px;
+color: #505050;
+font-size: 30px;
+font-weight: 700;
+}
+
+.form-hid p {
+margin: 0;
+color: #686868;
+font-size: 12px;
+font-weight: 600;
+}
+
+/* =========================
+Form
+========================= */
+
+.form {
+display: flex;
+flex-direction: column;
+gap: 12px;
+width: 100%;
+padding: 0;
+background-color: transparent;
+box-shadow: none;
+}
+
+.form input:not([type="submit"]) {
+width: 100%;
+min-height: 38px;
+padding: 11px 14px;
+border: 1px solid #eeeeee;
+border-radius: 10px;
+outline: none;
+background-color: #f0f0f0;
+color: #444444;
+font-size: 11px;
+transition: 0.25s ease;
+}
+
+.form input::placeholder {
+color: #b4b4b4;
+}
+
+.form input:focus {
+border-color: #655cf6;
+background-color: #ffffff;
+box-shadow: 0 0 0 2px rgba(101, 92, 246, 0.1);
+}
+
+/* Full Name Input */
+
+.input-group input {
+background-color: #ffffff !important;
+border-color: #8b83ff !important;
+}
+
+/* =========================
+Forgot Password
+========================= */
+
+.forgot-password {
+display: flex;
+justify-content: center;
+margin-top: -3px;
+margin-bottom: 5px;
+}
+
+.forgot-password a {
+color: #555555;
+font-size: 10px;
+text-decoration: none;
+}
+
+.forgot-password a:hover {
+color: #625df5;
+}
+
+/* =========================
+Error Message
+========================= */
+
+.form .error {
+margin: 0;
+color: #dc2626;
+font-size: 12px;
+text-align: center;
+}
+
+/* =========================
+Login & Register Buttons
+========================= */
+
+.form-buttons {
+display: flex;
+gap: 8px;
+width: 100%;
+margin-top: 4px;
+}
+
+.form-buttons .register-btn,
+.form-buttons .login-btn {
+display: flex;
+flex: 1;
+min-width: 0;
+min-height: 37px;
+justify-content: center;
+align-items: center;
+padding: 10px;
+border-radius: 9px;
+font-size: 11px;
+font-weight: 700;
+text-align: center;
+cursor: pointer;
+transition: 0.25s ease;
+text-decoration: none;
+}
+
+/* Login Button */
+
+.form-buttons .login-btn {
+border: 1px solid #d0d0d0;
+background-color: #ffffff;
+color: #444444;
+}
+
+.form-buttons .login-btn:hover {
+border-color: #625df5;
+color: #625df5;
+}
+
+/* Register Button */
+
+.form-buttons .register-btn {
+border: none;
+background-color: #625df5;
+color: #ffffff;
+}
+
+.form-buttons .register-btn:hover {
+background-color: #5148d8;
+transform: translateY(-1px);
+}
+
+/* =========================
+OR Divider
+========================= */
+
+.social-divider {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 7px;
+width: 55%;
+margin: 13px auto 9px;
+color: #999999;
+font-size: 10px;
+}
+
+.social-divider::before,
+.social-divider::after {
+content: "";
+flex: 1;
+height: 1px;
+background-color: #d0d0d0;
+}
+
+/* =========================
+Social Login Icons
+========================= */
+
+.social-icons {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 13px;
+}
+
+.social-icon {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 25px;
+height: 25px;
+padding: 0;
+border: none;
+background-color: transparent;
+cursor: pointer;
+transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+transform: scale(1.12);
+}
+
+/* Facebook */
+
+.facebook-icon {
+width: 21px;
+height: 21px;
+border-radius: 50%;
+background-color: #1877f2;
+color: #ffffff;
+}
+
+.facebook-icon i {
+padding-top: 4px;
+font-size: 15px;
+}
+
+/* Google */
+
+.google-icon i {
+color: #4285f4;
+font-size: 22px;
+}
+
+/* =========================
+Login Footer
+========================= */
+
+.login-footer {
+margin: 12px 0 0;
+color: #777777;
+font-size: 10px;
+text-align: center;
+}
+
+.login-footer a {
+color: #625df5;
+text-decoration: none;
+}
+
+.login-footer a:hover {
+text-decoration: underline;
+}
+.register-image-wrapper {
+position: relative;
+width: 100%;
+max-width: 420px;
+display: flex;
+justify-content: center;
+align-items: center;
+isolation: isolate;
+}
+
+.register-image-wrapper img {
+position: relative;
+z-index: 1;
+display: block;
+width: 100%;
+height: auto;
+object-fit: contain;
+}
+
+.register-image-wrapper {
+position: relative;
+width: 100%;
+max-width: 420px;
+display: flex;
+justify-content: center;
+align-items: center;
+isolation: isolate;
+}
+
+.register-shape {
+position: absolute;
+width: 78%;
+height: 72%;
+left: 10%;
+top: 18%;
+background-color: #dcd9ff;
+border-radius: 44% 56% 63% 37% / 37% 39% 61% 63%;
+transform: rotate(-12deg);
+z-index: -1;
+}
+
+.register-image-wrapper img {
+position: relative;
+display: block;
+width: 100%;
+height: auto;
+object-fit: contain;
+}
+.main-icon {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  z-index: 10;
+}
+/* =========================
+Responsive Design
+========================= */
+
+@media (max-width: 700px) {
+.register-main {
+flex-direction: column;
+justify-content: center;
+gap: 15px;
+padding: 20px;
+}
+
+.register-icon {
+flex: none;
+width: 100%;
+}
+
+.register-icon img {
+max-width: 220px;
+}
+
+.register-section {
+flex: none;
+width: 100%;
+padding: 10px 0;
+}
+
+.register-card {
+max-width: 400px;
+}
+}
+
+@media (max-width: 480px) {
+.register-main {
+padding: 15px;
+}
+
+.register-icon img {
+max-width: 170px;
+}
+
+.register-card {
+padding: 18px 20px 14px;
+}
+
+.form-hid h1 {
+font-size: 28px;
+}
+
+.form-hid p {
+font-size: 11px;
+}
+}
