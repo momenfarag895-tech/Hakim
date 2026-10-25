@@ -1,0 +1,79 @@
+
+.main-sec-pas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.formpas {
+  width: 50%;
+}
+.formpas p {
+    text-align: center;
+}
+.formpass {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 80%;
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+  margin-top: 50px;
+}
+
+.formpass input:not([type="submit"]) {
+  width: 100%;
+  min-height: 38px;
+  padding: 19px 14px;
+  box-sizing: border-box;
+  border: 2px solid #eeeeee;
+  border-radius: 10px;
+  outline: none;
+  background-color: #f0f0f0;
+  color: #444444;
+  font-size: 11px;
+  transition: 0.25s ease;
+}
+
+.formpass input::placeholder {
+  color: #b4b4b4;
+}
+
+.formpass input:focus {
+  border-color: #655cf6;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 2px rgba(101, 92, 246, 0.1);
+}
+
+.register {
+  width: 100%;
+  min-height: 38px;
+  border: none;
+  border-radius: 10px;
+  background-color: #625df5;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.register:hover {
+  background-color: #5148d8;
+  transform: translateY(-1px);
+}
+
+.error-message {
+  color: #e53935;
+  font-size: 12px;
+  margin: 0;
+  text-align: left;
+}
+
+
+@media (max-width: 768px) {
+  .formpas {
+    width: 90%;
+  }
+}
+

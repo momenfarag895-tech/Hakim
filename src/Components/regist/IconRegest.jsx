@@ -1,4 +1,5 @@
 import React from 'react';
+
 import register_icon from '../../assets/register_icon.png';
 
 const IconRegest = () => {
