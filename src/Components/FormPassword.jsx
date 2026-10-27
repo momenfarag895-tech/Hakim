@@ -1,6 +1,8 @@
 
 import React, { useState } from "react";
 import '../Style/formpas.css'
+import { Link } from "react-router-dom";
+
 
 const FormPassword = () => {
   const [formPas, setformPas] = useState({
@@ -39,10 +41,23 @@ const handleSubmit = (e) => {
 };
 
   return (
-    <section className="formpas">
-      <p>Enter New Password</p>
+    <section className="register-section">
+     <div className="register-card">
+        <div className="form-hid  form-pas">
+          <h1>Enter New Password</h1>
+        </div>
+      
 
-      <form className="formpass" onSubmit={handleSubmit}>
+      <form className="form" onSubmit={handleSubmit}>
+           <input
+            type="email"
+            name="email"
+            placeholder="Email or number phone"
+            // value={formData.email}
+            // onChange={handleChange}
+            // autoComplete="email"
+            required
+          />
         <input
           type="password"
           name="password"
@@ -70,6 +85,31 @@ const handleSubmit = (e) => {
 
         <button className="register" type="submit">Reset Password</button>
       </form>
+         <div className="social-divider">
+          <span>Or</span>
+        </div>
+             <div className="social-icons">
+          <button
+            type="button"
+            className="social-icon facebook-icon"
+            aria-label="Continue with Facebook"
+          >
+            <i className="fa-brands fa-facebook-f"></i>
+          </button>
+
+          <button
+            type="button"
+            className="social-icon google-icon"
+            aria-label="Continue with Google"
+          >
+            <i className="fa-brands fa-google"></i>
+          </button>
+        </div>
+         <p className="login-footer">
+          already have an account? <Link to="/login">Login</Link>
+        </p>
+
+      </div>
     </section>
   );
 };

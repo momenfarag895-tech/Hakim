@@ -1,13 +1,17 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import FormLogIn from '../Components/FormLogIn'
+import LogInIcon from '../Components/LogInIcon'
 
 
 const Login = () => {
-  return (
-    <div>
-      <Link to="/NewPassword">Go to New Password</Link>
-    </div>
+  return(
+    <section className="register-main">
+      < LogInIcon />
+      < FormLogIn />
+    </section>
   )
+  
+  
 }
 
 export default Login
