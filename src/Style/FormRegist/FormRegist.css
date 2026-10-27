@@ -60,6 +60,7 @@ justify-content: center;
 align-items: center;
 padding: 10px;
 background-color: #ffffff;
+
 }
 
 /* =========================
@@ -101,7 +102,22 @@ font-weight: 600;
 /* =========================
 Form
 ========================= */
+.form-pas h1 {
 
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+.password-link
+{
+    text-decoration: none;
+    display: block;
+    text-align: center;    
+    font-size: 12px;
+}
+.password-link:hover
+{
+    color: #130cf6;
+}
 .form {
 display: flex;
 flex-direction: column;
