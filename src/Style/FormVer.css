@@ -1,0 +1,93 @@
+
+.vc-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f6;
+  font-family: "Montserrat", sans-serif;
+}
+
+.vc-card {
+  width: 340px;
+  min-height: 460px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  padding: 80px 28px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vc-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4a4a4a;
+  margin: 0 0 24px;
+}
+
+.vc-inputs {
+  display: flex;
+  gap: 8px;
+}
+
+.vc-input {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #4a4a4a;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.vc-input:focus {
+  border-color: #6060f0;
+  box-shadow: 0 0 0 3px rgba(96, 96, 240, 0.15);
+}
+
+.vc-resend {
+  font-size: 9px;
+  color: #333;
+  margin: 24px 0 80px;
+}
+
+.vc-link {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #6060f0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.vc-link:hover {
+  text-decoration: underline;
+}
+
+.vc-btn {
+  width: 100%;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  background: #6060f0;
+  color: #fff;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.vc-btn:hover:not(:disabled) {
+  background: #4d4de0;
+}
+
+.vc-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
